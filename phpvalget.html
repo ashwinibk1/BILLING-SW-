@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	var x=1,i;
+$(document).ready(function(){
+	
+  $(".qty").click(function() {
+	  
+	  $('label').html($(this).val());
+
+  })
+
+
+	
+})
+
+</script>
+<script>
+	function nul(){}
+	
+var x=1,i,maxvalue=10,size=1;
+</script>
+<script>
+function func(){
+setInterval(function(){
+if(x==1){
+var temp=maxvalue;
+$("#"+temp).attr("style","background-color: white;font-size: 20px;color: black;text-align: center; padding : 15px 32px; ");
+}
+for(i=1;i<x;i++){
+$("#"+i).attr("style","background-color: white;font-size: 20px;color: black;text-align: center; padding : 15px 32px; ");
+}
+$("#"+i).attr("style","background-color: red;font-size: 20px;color: black;text-align: center; padding : 15px 32px; ");
+size=x;
+x++;
+if (x > maxvalue){
+x=1;
+}
+},3000);
+}
+</script>
+</head>
+
+<body onload="func()">
+	<table border=1 style="height: 100%;width: 100%; ">
+    <thead><h1><center>SELECT QUANTITY</h1></thead>
+    <tr style="height:100%;width: 100%; font-size: 200px;">
+<td>
+    
+<center>
+
+
+<button id="1" class="qty" value="1" style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px;">1</button>
+<button id="2" class="qty" value="2"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">2</button>
+<button id="3" class="qty" value="3"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">3</button>
+<button id="4" class="qty" value="4"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">4</button>
+<button id="5" class="qty" value="5"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">5</button>
+<button id="6" class="qty" value="6"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">6</button>
+<button id="7" class="qty" value="7"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">7</button>
+<button id="8" class="qty" value="8"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">8</button>
+<button id="9" class="qty" value="9"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px; ">9</button>
+<button id="10" class="qty" value="0"style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px;" onclick="nul()">0</button>
+<br>
+<label></label>
+<br>
+<br>
+<button id="a" style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px;   "> <-   </button>
+<button id="b" style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px;   "> ->   </button>
+<button id="c" style="background-color : white;font-size: 20px; color: black;text-align: center; padding : 15px 32px;   "> ENTER </button>
+</center>
+</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
